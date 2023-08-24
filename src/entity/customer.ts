@@ -4,18 +4,36 @@ class Customer {
   _address: string;
   _active: boolean;
 
-  constructor(id: string, name: string, address: string) {
+  constructor(id: string, name: string) {
     this._id = id;
     this._name = name;
+    this._address = "";
+    this._active = false;
+    this.validate();
+  }
+
+  validate() {
+    if (!this._name) {
+      throw new Error("Customer must have a name");
+    }
+    if (!this._id) {
+      throw new Error("Customer must have an id");
+    }
+  }
+
+  addAddress(address: string) {
     this._address = address;
-    this._active = true;
   }
 
   changeName(newName: string) {
     this._name = newName;
+    this.validate();
   }
 
   activate() {
+    if (this._address) {
+      throw new Error("Address is mandatory to active");
+    }
     this._active = true;
   }
 
