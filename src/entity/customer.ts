@@ -1,3 +1,13 @@
+// Domain
+// - Entity
+//   -- customer.ts (regra de negócio)
+
+// !=
+
+// Infra
+// - Model
+//   -- customer.ts (banco de dados - get e set)
+
 class Customer {
   _id: string;
   _name: string;
