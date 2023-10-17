@@ -22,10 +22,10 @@ describe("Order unit tests", () => {
 
   it("should calculate total", () => {
     const items = [
-      new OrderItem("1", "item1", 10),
-      new OrderItem("2", "item2", 20),
+      new OrderItem("1", "p1", "item1", 10, 2),
+      new OrderItem("2", "p2", "item2", 20, 2),
     ];
     const order = new Order("1", "123", items);
-    expect(order.total()).toEqual(30);
+    expect(order.total()).toEqual(60);
   });
 });
