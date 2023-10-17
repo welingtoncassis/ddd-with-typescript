@@ -9,5 +9,4 @@ customer.activate();
 
 const item1 = new OrderItem("1", "item 1", 10);
 const item2 = new OrderItem("2", "item 2", 15);
-
 const order = new Order("1", "1", [item1, item2]);
