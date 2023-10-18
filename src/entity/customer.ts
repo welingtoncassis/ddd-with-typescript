@@ -1,11 +1,3 @@
-// Domain
-// - Entity
-//   -- customer.ts (regra de negócio)
-// !=
-// Infra
-// - Model
-//   -- customer.ts (banco de dados - get e set)
-
 import Address from "./address";
 export default class Customer {
   private _id: string;
