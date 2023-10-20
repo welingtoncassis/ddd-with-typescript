@@ -1,3 +1,5 @@
+# Domain Layer
+
 ## Entity vs Model
 
 - Entity is part of the domain layer, in which are the business rules.
@@ -13,3 +15,7 @@
   Tips:
   Create repositories last.
   The domain dosen't need know how repositories works. In this case the domain need know only the interface that repositories implemnts
+
+# Infrastructure Layer
+
+- Specific layer to connect with services external to our domain layer
