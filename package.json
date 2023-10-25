@@ -1,14 +1,14 @@
 {
-  "name": "ddd-modelagem-tatica",
+  "name": "ddd-with-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Domain Driven Design with Typescript",
   "main": "index.js",
   "scripts": {
     "test": "npm run tsc -- --noEmit && jest",
     "tsc": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ddd", "typescript"],
+  "author": "welingtoncassis",
   "license": "ISC",
   "devDependencies": {
     "@swc/cli": "^0.1.62",
