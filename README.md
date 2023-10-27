@@ -33,7 +33,3 @@
 ## Models
 
 - Model is parte of the infra layer, in which are an database api. Generally represents an table in the database.
-
-## Modules
-
-- Modules are containers and can represents the domains of application
